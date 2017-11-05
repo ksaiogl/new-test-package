@@ -22,6 +22,14 @@
   },
   "homepage": "https://github.com/ksaiogl/new-test-package#readme",
   "dependencies": {
+    "async": "1.5.2",
+    "body-parser": "1.14.1",
+    "csv": "^2.0.0",
+    "elapsed-time": "0.0.1",
+    "express": "4.13.3",
+    "fast-csv": "^2.4.1",
+    "jsonschema": "^1.2.0",
+    "mongodb": "^2.2.33",
     "underscore": "^1.8.3"
   }
 }
