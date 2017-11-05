@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/ksaiogl/new-test-package/issues"
   },
-  "homepage": "https://github.com/ksaiogl/new-test-package#readme"
+  "homepage": "https://github.com/ksaiogl/new-test-package#readme",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
 }
