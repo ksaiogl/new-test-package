@@ -1,0 +1,24 @@
+{
+  "name": "new-test-package",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksaiogl/new-test-package.git"
+  },
+  "keywords": [
+    "new",
+    "test",
+    "package"
+  ],
+  "author": "“Sai <“k.sairohith94@gmail.com”>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksaiogl/new-test-package/issues"
+  },
+  "homepage": "https://github.com/ksaiogl/new-test-package#readme"
+}
