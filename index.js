@@ -6,7 +6,9 @@ var dbConfigValidation = require('./validation.js').dbConfigValidation;
 var util = require('./util.js');
 
 exports.getIPDetails = (inputDbConfig, ip, cb) => {
+    
     console.log("isnide getIPDetails");
+
     var validation_result = validator.validate(inputDbConfig, dbConfigValidation);
 
     var errors = [];
