@@ -101,7 +101,7 @@ function saveDataToDB(filePath, db, cb) {
 			if (validation_result.errors.length > 0) {
 				++wrongFormatCount;
 				++errCount;
-				wrongFormatRows.push({ 'rowNo': count, 'rowData': data, 'errorType': 'Wrong Format Row', 'error': util.makeErrorObject(validation_result.errors)});				
+				wrongFormatRows.push({ 'rowNo': count, 'rowData': data,'error': util.makeErrorObject(validation_result.errors)});				
 				console.log("inside errors");
 				next(null);
 			} else {
@@ -113,7 +113,7 @@ function saveDataToDB(filePath, db, cb) {
 					if (err) {
 						console.log("Error inserting data");
 						errCount = errCount + 1;
-						mongoErrorRows.push({ 'rowNo': count, 'rowData': data, 'errorType': 'Mongo error','error':err});				
+						mongoErrorRows.push({ 'rowNo': count, 'rowData': data,'error':err});				
 						
 						next(null);
 
@@ -124,7 +124,7 @@ function saveDataToDB(filePath, db, cb) {
 						} else {
 							++errCount;
 							++duplicateCount;
-							dupliacteRows.push({ 'rowNo': count, 'rowData': data, 'errorType': 'Dupliacte IP', 'error': 'Dupliacte IP'});
+							dupliacteRows.push({ 'rowNo': count, 'rowData': data,'error': 'Dupliacte IP'});
 						}
 						next(null)
 					}

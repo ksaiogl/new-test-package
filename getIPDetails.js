@@ -25,14 +25,13 @@ exports.getIPDetails = function (inputDbConfig, IPaddress, cb) {
 				if (err) {
 					console.log("err" + err.stack);
 					db.close();					
-					return cb(true, response);
+					return cb(true, "Error fetching IP Details");
 				} else {
 					console.log(response);
 					db.close();					
 					return cb(false, response);
 				}
 			});
-			// db.close();
 		}
 	});
 };

@@ -59,7 +59,8 @@ exports.dbConfigValidation = {
         "hosts": {
             "type": "array",
             "items": {
-                "type": "string"
+                "type": "string",
+                "required": true
             }
         },
         "databaseName": {
