@@ -47,26 +47,3 @@ exports.importData = (dbConfig, filePath, cb) => {
     }
 
 };
-
-// importData({
-//     'connectionType': 'singleInstance',
-//     'username': '',
-//     'password': '',
-//     'hosts': ['localhost:27017'],
-//     'databaseName': 'FindHotel',
-//     'ipDetailsColl': 'Test1'
-// }, './SourceData/data_dump.csv', (err, data) => {
-//     console.log(err);
-//     console.log(JSON.stringify(data));
-//     getIPDetails({
-//         'connectionType': 'singleInstance',
-//         'username': '',
-//         'password': '',
-//         'hosts': ['localhost:27017'],
-//         'databaseName': 'FindHotel',
-//         'ipDetailsColl': 'Test1'
-//     }, '200.106.141.15', function (err, res) {
-//         console.log("err1" + JSON.stringify(err));
-//         console.log("res1" + JSON.stringify(res));
-//     });
-// });
