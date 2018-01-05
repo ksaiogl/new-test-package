@@ -1,5 +1,5 @@
 {
-  "name": "new-test-package",
+  "name": "csv-mongo-uploader",
   "version": "1.0.10",
   "description": "",
   "main": "index.js",
